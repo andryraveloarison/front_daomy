@@ -1,0 +1,80 @@
+.home {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #001C30;
+    color: rgb(255, 255, 255);
+    height: '100vh';
+    min-height:  100vh;
+    min-width: 100vh;
+
+}
+
+.domino{
+    margin: 0;
+    width: 20vw;
+    position: absolute;
+
+}
+
+.welcome{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 40vh 50vh;
+    min-height: 100vh;
+}
+
+.welcome0{
+    display: inherit;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 20vh;
+    
+}
+
+.welcome1 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 3vw;
+
+}
+.welcome2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end:2;
+    margin-left: 5vw;
+}
+
+.title {
+    font-size: 2.5vw;
+}
+@font-face {
+    font-family: "Gridiculous";
+    src: url('/font/gridiculous.ttf');
+}
+ .daomy{
+    font-family: "Gridiculous";
+    font-size: 5vw;
+
+}
+
+p {
+    font-size: 13px;
+    width: 250px;
+    text-align: right;
+}
+
+.start {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    padding: 0;
+    margin-top: 2vh;
+}

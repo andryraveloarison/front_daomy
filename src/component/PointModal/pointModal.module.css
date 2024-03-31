@@ -1,0 +1,123 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: fixed;
+  width: 70%;
+  background: #fde3e3;
+}
+
+button:hover {
+  background-color: #25d3a4;
+}
+.modalBox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(46, 41, 41, 0.1);
+}
+section.active {
+  display: none;
+  z-index: 9999;
+}
+.resultatModal {
+    background: rebeccapurple;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 30%;
+  padding: 15px 0px;
+  border-radius: 24px;
+  background-color: #fff;
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 999999999999999;
+  min-width: 300px;
+}
+section.modalBox {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modalBox i {
+  font-size: 70px;
+  color: #4070f4;
+}
+
+
+.modalBox h1 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+
+.modalBox h2 {
+  margin-top: 0px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+.modalBox h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.modalBbox .buttons {
+  margin-top: 5px;
+
+}
+.modalBox button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.divButton {
+  padding-top: 10px;
+  display: flex;
+}
+
+.divResult {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top:  1px solid #000; /* Choisissez la couleur de votre ligne  ici */
+  border-bottom:  1px solid #000; /* Choisissez la couleur de votre ligne  ici */
+  width: 240px;
+
+}
+
+.divResult.h3 .span{
+  align-items: center;
+}
