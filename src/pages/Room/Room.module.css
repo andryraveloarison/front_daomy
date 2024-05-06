@@ -414,7 +414,6 @@ section {
 }
 .baseDiv{
     opacity: 1;
-    background-color: red;
 }
 .baseDiv2{
     background-color: rgb(242, 242, 242);
@@ -1179,7 +1178,6 @@ section {
         display: grid;
         grid-template-rows: 10vh 86vh 4vh 10fr 20px;
         grid-template-columns: 3vw 91vw 3vw;   
-        background-color: rgb(220, 34, 34)
     }
 
 
